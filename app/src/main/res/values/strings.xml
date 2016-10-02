@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Constraints</string>
+    <string name="cancel">Cancel</string>
+    <string name="date">Date</string>
+    <string name="etiam_porta_sem_malesuada_magna_mollis_euismod_curabitur_blandit_tempus_porttitor_nullam_quis_risus_eget_urna_mollis_ornare_vel_eu_leo_integer_posuere_erat_a_ante_venenatis_dapibus_posuere_velit_aliquet_curabitur_blandit_tempus_porttitor_lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit">Etiam porta sem malesuada magna mollis euismod. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="location">Location</string>
+    <string name="september_8_2016">September 8, 2016</string>
+    <string name="submit">Submit</string>
 </resources>

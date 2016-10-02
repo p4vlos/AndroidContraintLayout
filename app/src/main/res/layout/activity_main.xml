@@ -5,119 +5,141 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pavlosnicolaou.constraints.MainActivity">
+    tools:context="com.jonnyb.constraints.MainActivity">
 
     <ImageView
-        android:layout_width="0dp"
-        app:srcCompat="@drawable/photo"
-        android:id="@+id/imageView2"
-        android:scaleType="centerCrop"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
         android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/d141726c"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:contentDescription=""
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="121dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on"
         tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:contentDescription=""
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/location"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBaseline_creator="1"
         tools:layout_constraintLeft_creator="1" />
 
-    <ImageView
-        android:layout_width="50dp"
-        app:srcCompat="@android:drawable/btn_star_big_on"
-        android:id="@+id/imageView3"
-        android:layout_height="50dp"
-        app:layout_constraintRight_toRightOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/imageView2"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp" />
-
-    <TextView
-        android:text="Location"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp" />
-
     <EditText
+        android:id="@+id/editText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:ems="10"
         android:inputType="textPersonName"
         android:text="California Coast"
-        android:ems="10"
-        android:id="@+id/editText"
-        android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
         app:layout_constraintLeft_toRightOf="@+id/textView"
-        android:layout_marginLeft="16dp" />
+        app:layout_constraintRight_toRightOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:ignore="HardcodedText" />
 
     <TextView
-        android:text="Date"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="20dp"
         android:layout_marginLeft="16dp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/dateId" />
+        android:layout_marginStart="16dp"
+        android:text="@string/date"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
 
     <EditText
+        android:id="@+id/dateID"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:id="@+id/dateId"
-        tools:layout_editor_absoluteY="241dp"
+        android:inputType=""
+        android:text="@string/september_8_2016"
         app:layout_constraintLeft_toLeftOf="@+id/editText"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp"
-        app:layout_constraintHorizontal_bias="0.0" />
+        app:layout_constraintRight_toRightOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        tools:ignore="TextFields" />
 
     <EditText
-        android:layout_width="310dp"
-        android:layout_height="136dp"
-        android:inputType="textMultiLine"
-        android:ems="10"
         android:id="@+id/editText3"
-        android:text="The Central Coast is an area of California, United States, roughly spanning the coastal region between Point Mugu and Monterey Bay. It lies northwest of Los Angeles County and south of San Francisco and San Mateo counties."
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/dateId"
         android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="16dp" />
-
-    <Button
-        android:text="Submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button3"
-        android:layout_marginStart="16dp"
-        app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="top|center_vertical"
+        android:inputType="textMultiLine"
+        android:text="@string/etiam_porta_sem_malesuada_magna_mollis_euismod_curabitur_blandit_tempus_porttitor_nullam_quis_risus_eget_urna_mollis_ornare_vel_eu_leo_integer_posuere_erat_a_ante_venenatis_dapibus_posuere_velit_aliquet_curabitur_blandit_tempus_porttitor_lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateID"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <Button
-        android:text="Cancel"
+        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button4"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/submit"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="16dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" />
 </android.support.constraint.ConstraintLayout>
